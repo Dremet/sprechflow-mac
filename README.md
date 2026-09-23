@@ -41,3 +41,7 @@ The tests cover both API paths, audio payloads, dictionary and model handoff, er
 - [OpenRouter Speech-to-Text](https://openrouter.ai/docs/guides/overview/multimodal/stt)
 - [OpenRouter Audio Inputs](https://openrouter.ai/docs/guides/overview/multimodal/audio)
 - [OpenRouter Model Catalog](https://openrouter.ai/docs/api/api-reference/models/get-models)
+
+## License
+
+Sprechflow is available under the [MIT License](LICENSE).
