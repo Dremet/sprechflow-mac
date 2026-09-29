@@ -5,7 +5,13 @@
 - Nutzer meldet eine beantwortete statt transkribierte Aufgabe. Das betroffene Diktat wurde inzwischen durch ein weiteres ersetzt. Konfiguriert sind Whisper für Transkription und Gemini 2.5 Flash Lite für Nachbearbeitung; die Nachbearbeitung ist daher die vermutete, nicht nachgewiesene Fehlerquelle.
 - Nachbearbeitung erhält den Diktattext jetzt als JSON-Daten mit separaten Systemanweisungen und Beispielen für unverändert erhaltene Aufträge/Fragen. Wörterbuch und Sprachhinweise werden ebenfalls nur als Daten übergeben. Für Audio-Chat wurde eine separate Systemnachricht ergänzt; beide Chat-Pfade verwenden Temperatur 0.
 - Zwölf automatische Tests erfolgreich, darunter zwölf Eingabe-/Stilkombinationen mit Aufgaben, Fragen, englischem Text und Rollenanweisungen innerhalb des Diktats. Diese Tests prüfen Anfragegrenzen und Antwortverarbeitung mit simuliertem Anbieter; sie belegen keine tatsächliche Modellbefolgung.
-- Release-Build erstellt und installiert; Codesign-Prüfung und Binärvergleich erfolgreich. Aktualisierte App gestartet, Schlüssel- und Mikrofoneinstellung vorhanden. macOS verlangt erneut eine Bestätigung für die Einfügefreigabe; der Nutzer wurde zum Bestätigen des sichtbaren Apple-Watch-/Passwortdialogs aufgefordert. Ein echtes Diktat mit dem neuen Prompt ist noch zu prüfen.
+- Release-Build erstellt und installiert; Codesign-Prüfung und Binärvergleich erfolgreich. Aktualisierte App gestartet, Schlüssel- und Mikrofoneinstellung vorhanden. Ein echtes Diktat mit einer enthaltenen Aufgabe ist noch zu prüfen.
+
+## Globale Tastenkombination nach dem Update
+
+- Strg + Alt funktionierte laut Nutzer nur innerhalb von Sprechflow. Die App meldete fehlende Bedienungshilfen-Freigabe, obwohl der alte macOS-Eintrag eingeschaltet war. Aus-/Einschalten allein hatte den Zugriff nicht wiederhergestellt.
+- Den veralteten Eintrag entfernt und die installierte App erneut ausgewählt. Der Nutzer hat das Hinzufügen abgeschlossen. Danach zeigte Sprechflow „Bedienungshilfen erlaubt“; die Warnung für den globalen Tastaturmonitor verschwand.
+- Anschließend war ein echtes Diktatergebnis „Kurzer Test.“ mit „Einfügen gesendet“ sichtbar. Die Ziel-App und die physische Tastenkombination wurden dabei nicht unabhängig beobachtet. Keine erneute Änderung oder Signierung der App für diese Reparatur erforderlich.
 
 ## Autostart am 24. September
 
