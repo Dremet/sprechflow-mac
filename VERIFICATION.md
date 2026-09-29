@@ -12,6 +12,7 @@
 - Strg + Alt funktionierte laut Nutzer nur innerhalb von Sprechflow. Die App meldete fehlende Bedienungshilfen-Freigabe, obwohl der alte macOS-Eintrag eingeschaltet war. Aus-/Einschalten allein hatte den Zugriff nicht wiederhergestellt.
 - Den veralteten Eintrag entfernt und die installierte App erneut ausgewählt. Der Nutzer hat das Hinzufügen abgeschlossen. Danach zeigte Sprechflow „Bedienungshilfen erlaubt“; die Warnung für den globalen Tastaturmonitor verschwand.
 - Anschließend war ein echtes Diktatergebnis „Kurzer Test.“ mit „Einfügen gesendet“ sichtbar. Die Ziel-App und die physische Tastenkombination wurden dabei nicht unabhängig beobachtet. Keine erneute Änderung oder Signierung der App für diese Reparatur erforderlich.
+- Der Nutzer bestätigt anschließend zur Reparatur: „ja passt“.
 
 ## Autostart am 24. September
 
