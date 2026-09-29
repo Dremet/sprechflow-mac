@@ -1,4 +1,17 @@
-# Prüfstand – 23. September 2026
+# Prüfstand – 29. September 2026
+
+## Diktierte Prompts am 29. September
+
+- Nutzer meldet eine beantwortete statt transkribierte Aufgabe. Das betroffene Diktat wurde inzwischen durch ein weiteres ersetzt. Konfiguriert sind Whisper für Transkription und Gemini 2.5 Flash Lite für Nachbearbeitung; die Nachbearbeitung ist daher die vermutete, nicht nachgewiesene Fehlerquelle.
+- Nachbearbeitung erhält den Diktattext jetzt als JSON-Daten mit separaten Systemanweisungen und Beispielen für unverändert erhaltene Aufträge/Fragen. Wörterbuch und Sprachhinweise werden ebenfalls nur als Daten übergeben. Für Audio-Chat wurde eine separate Systemnachricht ergänzt; beide Chat-Pfade verwenden Temperatur 0.
+- Zwölf automatische Tests erfolgreich, darunter zwölf Eingabe-/Stilkombinationen mit Aufgaben, Fragen, englischem Text und Rollenanweisungen innerhalb des Diktats. Diese Tests prüfen Anfragegrenzen und Antwortverarbeitung mit simuliertem Anbieter; sie belegen keine tatsächliche Modellbefolgung.
+- Release-Build erstellt und installiert; Codesign-Prüfung und Binärvergleich erfolgreich. Aktualisierte App gestartet, Schlüssel- und Mikrofoneinstellung vorhanden. macOS verlangt erneut eine Bestätigung für die Einfügefreigabe; der Nutzer wurde zum Bestätigen des sichtbaren Apple-Watch-/Passwortdialogs aufgefordert. Ein echtes Diktat mit dem neuen Prompt ist noch zu prüfen.
+
+## Autostart am 24. September
+
+- Die Liste „Bei der Anmeldung öffnen“ war leer. Die installierte App `/Users/dremet/Applications/Sprechflow.app` wurde über die Systemeinstellungen hinzugefügt.
+- Anschließend zeigte die Liste genau „Sprechflow“, Art „App“. Ein zwischenzeitlich versehentlich hinzugefügter Programme-Ordner wurde wieder entfernt.
+- Der gespeicherte Eintrag wurde in der Oberfläche geprüft. Eine Abmeldung oder ein Neustart wurde nicht durchgeführt; der tatsächliche Start bei der nächsten Anmeldung ist noch nicht praktisch bestätigt.
 
 ## Nachgewiesen
 

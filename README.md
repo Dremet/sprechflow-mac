@@ -13,9 +13,11 @@ After building, the app is available at `dist/Sprechflow.app`. If installed at `
 5. In the text field where you want to dictate, **hold Ctrl + Left Alt**, speak, and release to finish. **Quickly press Ctrl + Alt twice** to start hands-free recording; press Ctrl + Alt again to stop. On a Mac keyboard, these keys are called Control and Option. You can also start recording from the menu bar icon.
 6. To use the global shortcut and automatic paste, allow Sprechflow under **System Settings → Privacy & Security → Accessibility**. The app opens this settings pane directly. Without this permission, you can record from the menu bar icon; the text is copied and can be pasted with Windows+V on a PC keyboard (Command+V on a Mac). Allow microphone access the first time you record.
 7. **Test paste (10 sec.)** checks pasting independently of the microphone and API. During the countdown, click an empty text field in iTerm2 or a browser. The app inserts `Sprechflow-Test` without a line break.
+8. To start automatically when signing in to the Mac, add `~/Applications/Sprechflow.app` under **System Settings → General → Login Items & Extensions → Open at Login**. Choose the installed app, not the `Applications` folder or the development build.
 
 ## Behavior
 
+- Spoken questions and prompts must remain dictation text. Audio chat uses a separate system instruction; refinement receives the transcript and vocabulary as JSON data, with examples of preserving requests instead of answering them. Model obedience is not guaranteed. To bypass the language model refinement stage, disable text refinement under Models; a dedicated transcription model such as Whisper then supplies the result directly.
 - Dictation is limited to 3 minutes; microphone tests are limited to 15 seconds.
 - Audio is recorded as mono WAV at 16 kHz and 16-bit. The selected input device is opened directly through AVFoundation; the macOS default device is not changed.
 - STT models with a `transcription` output use `/audio/transcriptions`; audio language models use `input_audio` through `/chat/completions`.
